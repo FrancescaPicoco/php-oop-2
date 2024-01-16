@@ -10,11 +10,12 @@ require __DIR__ . '/data.php';
 </head>
 <body>
     <div>
-    <?php foreach($items as $articolo) ?>
+    <?php foreach($items as $articolo) : ?>
     <ul>
-        <li><?= $products->img ?></li>
-        <li><?= $products->name ?></li>
+        <li><?= $articolo->img ?></li>
+        <li><?= $articolo->name ?></li>
     </ul>
+    <?php endforeach; ?>
     </div> 
 </body>
 </html>

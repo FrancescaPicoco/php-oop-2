@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/Type.php';
 
 class Products {
     public $img;
@@ -12,6 +13,6 @@ class Products {
        $this->name=$name;
        $this->price=$price;
        $this->descr=$descr;
-       $this->type=type;
+       $this->type=$type;
     }
 }

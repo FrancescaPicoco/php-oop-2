@@ -1,15 +1,17 @@
 <?php
-
 class Type {
     public $typology;
 
-    public function __construct($typology){
-        $this->typology=$typology;
+    public function __construct($typology) {
+        $this->typology = $typology;
     }
 
-    public function getItemTypology(){
-        $result = $this->typology;
-        return $result;
+    public function getTypology() {
+        return $this->typology;
     }
-    
+
+    // Aggiungi un metodo di accesso
+    public function setTypology($typology) {
+        $this->typology = $typology;
+    }
 }

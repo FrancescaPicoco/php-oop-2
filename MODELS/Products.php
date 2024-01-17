@@ -6,7 +6,7 @@ class Products {
     public $name;
     public $price;
     public $descr;
-    //public $typology;//use?
+    public $typology;//use?
     use Type;
 
     public function __construct($img ,$name, $price, $descr, Type $typology){ //Type $typology

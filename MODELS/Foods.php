@@ -4,12 +4,7 @@ class Foods extends Procudts{
     public $taste;
     public $kg;
 
-    public function __constructor($img ,$name, $price, $descr, Type $type,$taste,$kg){
-        // $this->img=$img;
-        // $this->name=$name;
-        // $this->price=$price;
-        // $this->descr=$descr;
-        // $this->type=type;
+    public function __constructor($img ,$name, $price, $descr, Type $type, $taste, $kg){
         parent::__construct($img ,$name, $price, $descr,$type);
         $this->taste=$taste;
         $this->kg=$kg;

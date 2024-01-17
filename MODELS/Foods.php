@@ -5,8 +5,8 @@ class Foods extends Products{
     public $taste;
     public $kg;
 
-    public function __constructor($img ,$name, $price, $descr, Type $type, $taste, $kg){
-        parent::__construct($img ,$name, $price, $descr,$type);
+    public function __constructor($img ,$name, $price, $descr, $typology, $taste, $kg){
+        parent::__construct($img ,$name, $price, $descr,$typology);
         $this->taste=$taste;
         $this->kg=$kg;
     }

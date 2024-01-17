@@ -5,9 +5,9 @@ class Boxes extends Products{
     public $location;
     public $size;
 
-    public function __construct($img ,$name, $price, $descr, Type $type ,array $materials,$location,$size){
+    public function __construct($img ,$name, $price, $descr, $typology ,array $materials,$location,$size){
 
-        parent::__construct($img ,$name, $price, $descr, $type);
+        parent::__construct($img ,$name, $price, $descr, $typology);
         $this->materials= $materials;
         $this->location= $location;
         $this->size= $size;

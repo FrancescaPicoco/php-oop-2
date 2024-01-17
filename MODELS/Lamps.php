@@ -5,9 +5,9 @@ class Lamps extends Products {
      public $voltaggio;
      public $potenza;
 
-     public function __construct($img ,$name, $price, $descr, Type $type,$colore,$voltaggio,$potenza){
+     public function __construct($img ,$name, $price, $descr, $typology,$colore,$voltaggio,$potenza){
 
-         parent::__construct($img ,$name, $price, $descr,$type);
+         parent::__construct($img ,$name, $price, $descr,$typology);
          $this->colore=$colore;
          $this->voltaggio=$voltaggio;
          $this->potenza=$potenza;

@@ -1,0 +1,7 @@
+.dark{
+    background-color: rgb(74, 99, 183);
+}
+.size-card{
+    width: calc((100% / 3) - 20px);
+    margin: 10px;
+}

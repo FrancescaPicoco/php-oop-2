@@ -6,9 +6,9 @@ require_once __DIR__ . '/MODELS/Lamps.php';
 $bats = "Pipistrelli";
 $spiders = "Ragni";
 $snakes = "Serpenti";
-$src_bat = "/IMG/bat.jpg";
-$src_spider = "/IMG/spider.jpg";
-$src_snake = "/IMG/snake.jpg";
+$src_bat = "./IMG/bat.jpg";
+$src_spider = "./IMG/spider.jpg";
+$src_snake = "./IMG/snake.jpg";
 $Items = [
     new Boxes(
         $src_bat,

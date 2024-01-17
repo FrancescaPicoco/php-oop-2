@@ -12,10 +12,21 @@ $Items = [
         "img",
         "Casetta per Pipistrelli",
         "21,44€",
-        "Casa nido per pipistrelli realizzata in legno di pino e dipinta in modo artigianale e a mano, con pittura certificata ecologica a base d'acqua.",
+        "Casa nido per pipistrelli realizzata in legno di pino e dipinta a mano, con pittura certificata ecologica a base d'acqua.",
         $bats,
-        // "Legno",
-        // "Esterno",
-        // "26,5x17,7x12,4 cm",
+        ["Legno"],
+        "Esterno",
+        "26,5x17,7x12,4 cm",
+    ),
+    new Boxes(
+        "img",
+        "Casetta per Pipistrelli",
+        "21,44€",
+        "Casa nido per pipistrelli realizzata in legno di pino e dipinta a mano, con pittura certificata ecologica a base d'acqua.",
+        $bats,
+        ["Legno"],
+        "Esterno",
+        "26,5x17,7x12,4 cm",
     )
+
 ];

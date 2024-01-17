@@ -10,8 +10,8 @@ class Type {
         return $this->typology;
     }
 
-    // Aggiungi un metodo di accesso
-    public function setTypology($typology) {
-        $this->typology = $typology;
-    }
+    // Aggiungo un metodo di accesso
+    //public function setTypology($typology) {
+    //    $this->typology = $typology;
+    //}
 }

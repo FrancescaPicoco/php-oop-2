@@ -27,7 +27,10 @@ require __DIR__ . '/data.php';
                     <div class="card-body">
                         <h5 class="card-title"><?= get_class($articolo) . "per" . $articolo->getTypology() ?></h5>
                         <p class="card-text"> <?= $articolo->descr ?> </p>
-                        <bold><?= $articolo->price?></bold> 
+                        <bold><?= $articolo->price?></bold>
+                        <?php foreach($articolo->materials as $material) : ?>
+                            <p><?= (isset($material->materials)) ? "Materiali-" . $material->materials . "-" : "" ?></p>
+                        <?php endforeach; ?> 
                         <p><?= (isset($articolo->location)) ? "Luogo:" . $articolo->location : ""?></p>
                         <p><?= (isset($articolo->size)) ? "Dimensioni:" . $articolo->size : ""?></p>
                         <p><?= (isset($articolo->taste)) ? "Gusto=" . $articolo->taste : ""?></p>

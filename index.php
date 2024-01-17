@@ -17,9 +17,9 @@ require __DIR__ . '/data.php';
     <title>PetsCare</title>
 </head>
 <body>
-    <div class="container-sm dark">
+    <div class="container-sm bg-dark bg-gradient">
         <h1 class="text-center mt-3 pt-3">ALL FOR Y&#10084;UR PETS</h1>
-        <div class="container-sm dark d-flex flex-wrap">
+        <div class="container-sm green d-flex flex-wrap">
             <?php foreach($Items as $articolo) : ?>  
                 <div class="card size-card">
                   <img src="<?= $articolo->img ?>" class="card-img-top">
@@ -28,9 +28,13 @@ require __DIR__ . '/data.php';
                         <h5 class="card-title"><?= get_class($articolo) . "per" . $articolo->getTypology() ?></h5>
                         <p class="card-text"> <?= $articolo->descr ?> </p>
                         <bold><?= $articolo->price?></bold>
+
                         <?php foreach($articolo->materials as $material) : ?>
-                            <p><?= (isset($material->materials)) ? "Materiali-" . $material->materials . "-" : "" ?></p>
+                            <p><?= "Materiali:" . $articolo->material ?></p>
                         <?php endforeach; ?> 
+
+                        <?= (isset($material->materials)) ? "Materiali-" . $material->materials . "-" : "" ?></p>
+                        
                         <p><?= (isset($articolo->location)) ? "Luogo:" . $articolo->location : ""?></p>
                         <p><?= (isset($articolo->size)) ? "Dimensioni:" . $articolo->size : ""?></p>
                         <p><?= (isset($articolo->taste)) ? "Gusto=" . $articolo->taste : ""?></p>

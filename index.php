@@ -23,10 +23,19 @@ require __DIR__ . '/data.php';
             <?php foreach($Items as $articolo) : ?>  
                 <div class="card size-card">
                   <img src="<?= $articolo->img ?>" class="card-img-top">
+                  <h5><?= $articolo->name?></h5>
                     <div class="card-body">
                         <h5 class="card-title"><?= get_class($articolo) . "per" . $articolo->getTypology() ?></h5>
                         <p class="card-text"> <?= $articolo->descr ?> </p>
                         <bold><?= $articolo->price?></bold>
+                        <p><?= (isset($articolo->materials)) ? "Materiali-" . $articolo->materials . "-" : "" ?></p>
+                        <p><?= (isset($articolo->location)) ? "Luogo:" . $articolo->location : ""?></p>
+                        <p><?= (isset($articolo->size)) ? "Dimensioni:" . $articolo->size : ""?></p>
+                        <p><?= (isset($articolo->taste)) ? "Gusto=" . $articolo->taste : ""?></p>
+                        <p><?= (isset($articolo->kg)) ? "Kg:" . $articolo->kg : ""?></p>
+                        <p><?= (isset($articolo->colore)) ? "Colore:" . $articolo->colore : ""?></p>
+                        <p><?= (isset($articolo->voltaggio)) ? "Voltaggio" . $articolo->voltaggio : ""?></p>
+                        <p><?= (isset($articolo->potenza)) ? "potenza:" . $articolo->potenza : ""?></p>
                         <a href="#" class="btn btn-primary">Buy It</a>
                     </div>
                 </div> 

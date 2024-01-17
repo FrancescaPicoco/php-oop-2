@@ -11,12 +11,14 @@ require __DIR__ . '/data.php';
 <body>
     <div>
         <?php foreach($items as $articolo) : ?>
+            <h1> <?= count($Items) ?> </h1>
+            <h1> <?= get_class($articolo) . " for " . $articolo->Type->getItemTypology() ?></h1>
         <ul>
             <li>
                 <?= $articolo->img ?>
             </li>
             <li>
-                <?= $articolo->name ?>
+                <?= $articolo->Type->name ?>
             </li>
         </ul>
         <?php endforeach; ?>
